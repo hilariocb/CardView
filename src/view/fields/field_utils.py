@@ -52,7 +52,7 @@ def format_single_line_normal(
     )
     body = date or ""
     if place:
-        body = " ".join((body, _("in"), place)).strip()
+        body = " ".join((body, _("en"), place)).strip()
     body_label = get_link(
         body,
         "Event",
@@ -72,7 +72,7 @@ def format_single_line_abbreviated(
     if date:
         body = " ".join((body, date))
     if place:
-        body = " ".join((body, _("in"), place)).strip()
+        body = " ".join((body, _("en"), place)).strip()
     body_label = get_link(
         body,
         "Event",

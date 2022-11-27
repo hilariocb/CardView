@@ -255,14 +255,14 @@ class PersonCard(ReferenceCard):
         context_menu.append(
             menu_item(
                 "gramps-event",
-                _("Add a new primary event"),
+                _("Añadir un nuevo evento primario"),
                 action.add_new_event,
             )
         )
         context_menu.append(
             menu_item(
                 "gramps-event",
-                _("Add as participant to an existing event"),
+                _("Añadir como participante a un evento existente"),
                 action.add_existing_event,
             )
         )

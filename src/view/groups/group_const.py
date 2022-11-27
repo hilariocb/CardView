@@ -89,7 +89,7 @@ GENERIC_GROUPS = {
     "ldsord": (
         LDSOrdinancesCardGroup,
         _("Ordinance"),
-        _("Ordinances"),
+        _("Ordenanzas"),
     ),
     "maternal": (
         MaternalLineageCardGroup,
@@ -104,7 +104,7 @@ GENERIC_GROUPS = {
     "name": (
         NamesCardGroup,
         _("Name"),
-        _("Names"),
+        _("Nombres"),
     ),
     "note": (
         NotesCardGroup,
@@ -134,7 +134,7 @@ GENERIC_GROUPS = {
     "timeline": (
         TimelineCardGroup,
         _("Timeline Event"),
-        _("Timeline Events"),
+        _("Eventos en el tiempo"),
     ),
     "todo": (
         TodoNotesCardGroup,

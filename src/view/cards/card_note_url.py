@@ -74,7 +74,7 @@ class NoteUrlCard(ObjectCard):
 
         label = Gtk.Label(use_markup=True, label="<b>%s</b>" % escape(link))
         self.widgets["title"].pack_start(label, False, False, 0)
-        text = "%s %s %s %s" % (_("Found"), _("in"), _("note"), note.gramps_id)
+        text = "%s %s %s %s" % (_("Found"), _("en"), _("note"), note.gramps_id)
         note_link = self.get_link(
             text,
             "Note",

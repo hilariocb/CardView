@@ -227,12 +227,12 @@ def get_parents_group(grstate, person, args):
             groptions.set_context("parent")
             if len(person.parent_family_list) > 1:
                 title = "%s (%s %s)" % (
-                    _("Parents and Siblings"),
+                    _("Padres y hermanos"),
                     len(person.parent_family_list),
                     _("Families"),
                 )
             else:
-                title = _("Parents and Siblings")
+                title = _("Padres y hermanos")
             parents = group_wrapper(grstate, elements, (title, title, title))
         else:
             parents = elements
@@ -270,7 +270,7 @@ def get_spouses_group(grstate, person, args):
                         _("Families"),
                     )
                 else:
-                    title = _("Spouse and Children")
+                    title = _("Cónyuge e hijos")
                 spouses = group_wrapper(
                     grstate, elements, (title, title, title)
                 )

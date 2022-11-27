@@ -112,7 +112,7 @@ def get_relation(db, person, relation, depth=15):
         db, base_person, person, extra_info=True
     )
     if result[0]:
-        return "%s %s %s" % (result[0].capitalize(), _("of"), base_person_name)
+        return "%s %s %s" % (result[0].capitalize(), _("de"), base_person_name)
     return None
 
 

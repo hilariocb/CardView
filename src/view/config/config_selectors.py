@@ -70,9 +70,9 @@ VALUE_TYPES = {
 
 CALCULATED_PERSON_TYPES = {
     "None": _("None"),
-    "Child Number": _("Child Number"),
-    "Duration": _("Duration"),
-    "Lifespan": _("Lifespan"),
+    "Child Number": _("Número de hijo"),
+    "Duration": _("Longevidad"),
+    "Lifespan": _("Longevidad"),
     "Living": _("Living"),
     "Occupations": _("Occupations"),
     "Maternal Progenitors": _("Maternal Progenitors"),
@@ -81,15 +81,15 @@ CALCULATED_PERSON_TYPES = {
 
 CALCULATED_FAMILY_TYPES = {
     "None": _("None"),
-    "Duration": _("Duration"),
-    "Ages": _("Ages"),
-    "Bride Age": _("Bride Age"),
-    "Groom Age": _("Groom Age"),
-    "Relationship": _("Relationship"),
+    "Duration": _("Longevidad"),
+    "Ages": _("Edades"),
+    "Bride Age": _("Edad de la novia"),
+    "Groom Age": _("Edad del novio"),
+    "Relationship": _("Relación"),
 }
 
 CALCULATED_ATTRIBUTE_TYPES = {
-    "None": _("None"),
+    "None": _("Ninguno"),
     "Soundex": _("Soundex"),
 }
 

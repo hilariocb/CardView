@@ -178,7 +178,7 @@ class EventCard(ReferenceCard):
             if not text and self.primary_participant:
                 text = "%s %s %s" % (
                     event_type,
-                    _("of"),
+                    _("de"),
                     self.primary_participant[3],
                 )
             elif not text:
@@ -240,7 +240,7 @@ class EventCard(ReferenceCard):
             role = primary_obj_event_ref.get_role()
         self.__set_role_type(role)
         role_name = str(role)
-        title = "%s %s %s" % (event_type, _("of"), primary_obj_name)
+        title = "%s %s %s" % (event_type, _("de"), primary_obj_name)
         if self.reference_base:
             if self.reference_base.obj.handle == primary_obj.handle:
                 title = self.__adjust_title(title, event_type, primary_obj)
@@ -258,7 +258,7 @@ class EventCard(ReferenceCard):
                     self.event_role_type = "implicit"
                     self.event_relationship = relationship
                     text = relationship.split()[0].title()
-                    title = "%s %s %s" % (event_type, _("of"), text)
+                    title = "%s %s %s" % (event_type, _("de"), text)
                     role_name = "%s: %s" % (_("Implicit Family"), text)
         return title, role_name
 

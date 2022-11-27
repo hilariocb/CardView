@@ -256,13 +256,13 @@ class CardIcons(Gtk.HBox, GrampsConfig):
             if group_type == "parent":
                 text = "%s %s %s" % (
                     _("Set"),
-                    _("of"),
+                    _("de"),
                     GROUP_LABELS[group_type],
                 )
         else:
             text = GROUP_LABELS[group_type]
             if group_type == "parent":
-                text = "%s %s %s" % (_("Sets"), _("of"), text)
+                text = "%s %s %s" % (_("Sets"), _("de"), text)
         tooltip = "%s %s" % (str(count), text)
         eventbox = Gtk.EventBox(tooltip_text=tooltip)
         if self.grstate.config.get("indicator.child-objects-counts"):

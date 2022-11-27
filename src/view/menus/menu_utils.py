@@ -391,7 +391,7 @@ def add_clipboard_menu_option(grstate, parent_menu, callback):
     if not grstate.config.get("menu.clipboard"):
         return
     parent_menu.append(
-        menu_item("edit-copy", _("Copy to clipboard"), callback)
+        menu_item("edit-copy", _("Copiar al portapapeles"), callback)
     )
 
 
@@ -564,7 +564,7 @@ def add_names_menu(grstate, parent_menu, grobject):
     if not grstate.config.get("menu.names"):
         return
     action = action_handler("Name", grstate, None, grobject)
-    menu = new_menu("list-add", _("Add a new name"), action.add_name)
+    menu = new_menu("list-add", _("Añadir un nuevo nombre"), action.add_name)
     name_list = grobject.obj.alternate_names
     if name_list:
         deletemenu = new_submenu(menu, "gramps-person", _("Delete a name"))
@@ -580,7 +580,7 @@ def add_names_menu(grstate, parent_menu, grobject):
                 menu_item("list-remove", given_name, action.delete_object)
             )
             menu.add(menu_item("gtk-edit", given_name, action.edit_name))
-    parent_menu.append(submenu_item("gramps-person", _("Names"), menu))
+    parent_menu.append(submenu_item("gramps-person", _("Nombres"), menu))
 
 
 def add_associations_menu(grstate, parent_menu, grobject):
@@ -859,7 +859,7 @@ def add_person_menu_options(grstate, parent_menu, grobject, family, context):
         parent_menu.append(
             menu_item(
                 "list-remove",
-                _("Remove child from this family"),
+                _("Quitar al niño de esta familia"),
                 action.remove_child,
             )
         )
@@ -945,7 +945,7 @@ def add_ldsords_menu(grstate, parent_menu, grobject):
                 menu_item("list-remove", text, action.delete_object)
             )
             menu.add(menu_item("gtk-edit", text, action.edit_object))
-    parent_menu.append(submenu_item("gramps-person", _("Ordinances"), menu))
+    parent_menu.append(submenu_item("gramps-person", _("Ordenanzas"), menu))
 
 
 def add_enclosed_places_menu(grstate, parent_menu, grobject):

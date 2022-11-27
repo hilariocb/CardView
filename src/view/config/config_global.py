@@ -205,14 +205,14 @@ def build_display_grid(configdialog, grstate, *_dummy_args):
     )
     configdialog.add_spinner(
         grid,
-        _("Maximum icons to show per line in header cards"),
+        _("Maximum icons to show per line in header cards."),
         24,
         "display.icons-active-width",
         (1, 40),
     )
     configdialog.add_spinner(
         grid,
-        _("Maximum icons to show per line in group cards"),
+        _("Maximum icons to show per line in group cards."),
         25,
         "display.icons-group-width",
         (1, 40),

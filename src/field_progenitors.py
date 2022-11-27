@@ -40,9 +40,9 @@ from gramps.gen.utils.db import family_name
 _ = glocale.translation.sgettext
 
 MATERNAL_PROGENITORS = "Maternal Progenitors"
-MATERNAL_PROGENITORS_LANG = _("Maternal Progenitors")
+MATERNAL_PROGENITORS_LANG = _("Abuelos maternos")
 PATERNAL_PROGENITORS = "Paternal Progenitors"
-PATERNAL_PROGENITORS_LANG = _("Paternal Progenitors")
+PATERNAL_PROGENITORS_LANG = _("Abuelos paternos")
 
 
 # ------------------------------------------------------------------------

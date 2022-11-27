@@ -66,11 +66,11 @@ def load_on_reg(_dummy_dbstate, _dummy_uistate, _dummy_plugin):
 
 supported_types = {
     "Person": [
-        ("Duration", _("Duration")),
-        ("Lifespan", _("Lifespan")),
+        ("Duration", _("Longevidad")),
+        ("Lifespan", _("Longevidad")),
         ("Living", _("Living")),
     ],
-    "Family": [("Duration", _("Duration"))],
+    "Family": [("Duration", _("Longevidad"))],
 }
 
 
@@ -90,7 +90,7 @@ def get_duration_field(grstate, obj, field_value, args):
     if isinstance(obj, Family) and field_value == "Duration":
         duration = get_marriage_duration(grstate.dbstate.db, obj)
         if duration:
-            return [(get_label(_("Duration")), get_label(duration))]
+            return [(get_label(_("Longevidad")), get_label(duration))]
         return []
 
     if isinstance(obj, Person):
@@ -112,7 +112,7 @@ def get_duration_field(grstate, obj, field_value, args):
             if span:
                 return [
                     (
-                        get_label(_("Lifespan")),
+                        get_label(_("Longevidad")),
                         get_label(span, italic=not accurate_lifespan(obj)),
                     )
                 ]

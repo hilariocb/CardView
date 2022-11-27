@@ -45,7 +45,7 @@ from view.config.config_utils import create_grid
 
 _ = glocale.translation.sgettext
 
-CHILD_NUMBER_LANG = _("Child Number")
+CHILD_NUMBER_LANG = _("Número de hijo")
 
 OPTION_SHOW_MOTHER = "field.child.show-mother"
 OPTION_SHOW_FATHER = "field.child.show-father"
@@ -140,7 +140,7 @@ def get_child_field(grstate, obj, _dummy_field_value, args):
         total = total + 1
         if child_ref.ref == obj.handle:
             number = total
-    data = ["%s %s %s" % (str(number), _("of"), str(total))]
+    data = ["%s %s %s" % (str(number), _("de"), str(total))]
 
     if person_birth:
         data = data + get_optional_fields(grstate, parent_family, person_birth)
@@ -213,9 +213,9 @@ def get_parent_age_text(parent_birth_date, event_date, parent_type):
     span = get_span(parent_birth_date, event_date)
     if span:
         if parent_type == "Mother":
-            parent_text = "%s %s" % (_("Mother age"), span)
+            parent_text = "%s %s" % (_("Edad de la madre"), span)
         else:
-            parent_text = "%s %s" % (_("Father age"), span)
+            parent_text = "%s %s" % (_("Edad del padre"), span)
     return parent_text
 
 
@@ -256,7 +256,7 @@ def check_unmarried_at_birth(birth_date, marriage):
     """
     Return status of marriage at time of a child's birth.
     """
-    status = _("married")
+    status = _("casados")
     base_date = None
     if marriage and birth_date:
         marriage_sortval = get_date_sortval(marriage)
