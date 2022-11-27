@@ -168,10 +168,10 @@ class TagView(ListView):
 
     # column definitions
     COLUMNS = [
-        (_("Name"), TEXT, None),
+        (_("Nombre"), TEXT, None),
         (_("Color"), TEXT, None),
-        (_("Priority"), TEXT, None),
-        (_("Last Changed"), TEXT, None),
+        (_("Prioridad"), TEXT, None),
+        (_("Último cambio"), TEXT, None),
     ]
     # default setting with visible columns, order of the col, and their size
     CONFIGSETTINGS = (
